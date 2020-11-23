@@ -464,8 +464,11 @@ button:focus {
   border: #afb1b8 solid 1px;
   border-radius: 4px;
 }
-.client-icons:hover {
-  fill: var(--white);
+.client-container :hover {
+  fill: var(--style-color);
+}
+.clients svg :hover {
+  fill: var(--style-color);
 }
 .client-container:not(:first-child) {
   margin-left: 10px;
