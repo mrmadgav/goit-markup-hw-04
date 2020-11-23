@@ -5,6 +5,7 @@
   --white: #ffffff;
   --color-contacts: #757575;
   --card-border-color: #eeeeee;
+  --svg-color-main: #afb1b8;
 }
 * {
   margin: 0;
@@ -400,65 +401,64 @@ button:focus {
 .link-contacts-telephone {
   margin-left: 10px;
 }
-
-path:hover {
-  fill: var(--style-color);
-  stroke: var(--style-color);
-}
 .icon {
   display: flex;
   align-content: center;
   justify-content: center;
 }
 .advantages-list .icon {
-  width: "70px";
-  height: "70px";
   margin-bottom: 55px;
 }
-.worker-icons {
-  display: flex;
-  margin-right: 32px;
-  margin-left: 32px;
-  justify-content: space-around;
-  align-content: center;
+
+/* Social Section */
+.team-section svg {
+  fill: var(--svg-color-main);
 }
-.worker-icons li:not(:first-child) {
-  margin-left: 22px;
+.team-section a {
+  display: block;  
 }
-.worker-icons li {
-  margin-bottom: 32px;
+.social-container {
+  display: inline-block;
+  width: 44px;
+  height: 44px;  
 }
-.clients-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 94px;
-  margin-right: auto;
-  margin-left: auto;
+.social-icons:hover {
+  fill:var(--white);
 }
-.social-icons-hover:hover {
-  fill: var(--style-color);
-  stroke: var(--style-color);
+.team-section a:hover {
+  background-color: var(--style-color);
+  width: 44px;
+  height: 44px; 
+  border-radius: 50%;  
 }
-.clients-icons li:hover {
-  fill: var(--style-color);
-  stroke: var(--style-color);
+.social-container:not(:first-child) {
+  margin-left: 10px;
 }
-.clients-icons li {
+
+/* Clients Section */
+.clients svg {
+  fill: var(--svg-color-main);
+}
+.icon-client {
   border: #afb1b8 solid 1px;
-  border-radius: 4px;
-  align-content: center;
-  justify-content: center;
+  border-radius: 4px; 
 }
-.clients-icons li:not(:last-child) {
-  margin-right: 30px;
+.clients li:not(:first-child) {
+  margin-left: 30px;
 }
-.clients-icons li:hover {
-  color: var(--style-color);
-  fill: var(--style-color);
-  stroke: var(--style-color);
+.clients div {
+  margin-bottom: 94px;
 }
-.clients-icons-link {
+.icon-client:hover {
+  border-color: var(--style-color);
+}
+.clients a {
+  display: block;  
+}
+.icon-item {
   width: 170px;
-  height: 90px;
+  height: 90px;  
+}
+.icon-item:hover {
+fill: var(--style-color);
 }
