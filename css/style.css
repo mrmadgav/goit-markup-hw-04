@@ -172,6 +172,14 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+.box::before {
+  content: '';
+  font-size: 40px;
+  color: orange;
+  display: inline-block;  
+  width: 70px;
+  height: 70px;
+}
 .advantages-description {
   margin-top: 10px;
   font-family: "Roboto";
@@ -187,7 +195,7 @@ ul {
 }
 
 .advantages-list {
-  display: flex;
+  display: flex; 
 }
 .worker-name {
   display: block;
