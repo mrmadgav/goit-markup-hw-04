@@ -295,6 +295,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-links:hover {
   background-color: var(--style-color);
@@ -355,7 +358,11 @@ ul {
 .button-block:not(:first-child) {
   margin-left: 8px;
 }
-.button:focus,
+button {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 button:hover {
   background: var(--style-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -422,6 +429,9 @@ button:focus {
   margin-bottom: 30px;
   margin-right: 25px;
   border: 1px solid var(--card-border-color);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards:hover {
   background: #ffffff;
@@ -470,7 +480,12 @@ button:focus {
   align-content: center;
   cursor: pointer;
 }
-.item.menu-item.address:hover {
+.menu-item.address:hover {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-item.address:hover {
   fill: var(--style-color);
 }
 .header-svg {
@@ -503,16 +518,28 @@ button:focus {
   display: inline-block;
   width: 44px;
   height: 44px;
+  margin-bottom: 20px;
+}
+.team-section {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-section a:hover svg {
+  fill: var(--white);
+}
+.social-links {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links:hover {
   background-color: var(--style-color);
-  fill: var(--white);
   color: var(--white);
 }
 .social-container:not(:first-child) {
   margin-left: 10px;
 }
-
 /* Clients Section */
 
 .client-container {
@@ -531,6 +558,10 @@ button:focus {
   justify-content: center;
   width: 100%;
   height: 100%;
+  fill: var(--svg-color-main);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .container {
   margin-bottom: 94px;
@@ -538,5 +569,12 @@ button:focus {
 .client-links:hover {
   fill: var(--style-color);
   color: var(--style-color);
+}
+.clients li:hover {
   border-color: var(--style-color);
+}
+.clients li {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
