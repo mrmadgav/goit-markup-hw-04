@@ -173,10 +173,10 @@ ul {
   color: var(--main-color);
 }
 .box::before {
-  content: '';
+  content: "";
   font-size: 40px;
   color: orange;
-  display: inline-block;  
+  display: inline-block;
   width: 70px;
   height: 70px;
 }
@@ -195,7 +195,7 @@ ul {
 }
 
 .advantages-list {
-  display: flex; 
+  display: flex;
 }
 .worker-name {
   display: block;
@@ -433,9 +433,6 @@ button:focus {
   width: 20px;
   height: 20px;
 }
-.team-section svg {
-  fill: var(--svg-color-main);
-}
 .social-container {
   display: inline-block;
   width: 44px;
@@ -456,7 +453,8 @@ button:focus {
 
 /* Clients Section */
 
-.client-section svg {
+.clients svg,
+.team-section svg {
   fill: var(--svg-color-main);
 }
 .client-container {
@@ -479,4 +477,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+.clients .container {
+  margin-bottom: 94px;
 }
