@@ -25,11 +25,12 @@
                     </div>
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menu-page"
+                            <a class="menu-page undertitle"
                                 href="./index.html">Студия</a></li>
-                        <li class="menu-item"><a class="menu-page"
+                        <li class="menu-item"><a class="menu-page undertitle"
                                 href="./portfolio.html">Портфолио</a></li>
-                        <li class="menu-item"><a class="menu-page" href="">Контакты</a></li>
+                        <li class="menu-item"><a class="menu-page undertitle"
+                                href="">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="contacts">
@@ -56,7 +57,8 @@
                 <div class="container">
                     <h1 class="page-title-hero">Эффективные решения для вашего
                         бизнеса</h1>
-                    <button type="button" class="order button">Заказать услугу</button>
+                    <button type="button" class="order button" data-modal-open>Заказать
+                        услугу</button>
                 </div>
             </section>
             <section class="advantages">
@@ -128,6 +130,8 @@
                     <h2 class="page-title">Чем мы занимаемся</h2>
                     <ul class="team">
                         <li class="item">
+                            <div class="overlay-activity"><p>Десктопные
+                                    приложения</p></div>
                             <img
                                 src="images/img1pref.jpg"
                                 alt="наши преимущества"
@@ -135,6 +139,8 @@
                                 />
                         </li>
                         <li class="item">
+                            <div class="overlay-activity"><p>Мобильные
+                                    приложения</p></div>
                             <img
                                 src="images/img2pref.jpg"
                                 alt="наши преимущества"
@@ -142,6 +148,8 @@
                                 />
                         </li>
                         <li class="item">
+                            <div class="overlay-activity"><p>Дизайнерские
+                                    решения</p></div>
                             <img
                                 src="images/img3pref.jpg"
                                 alt="наши преимущества"
@@ -461,7 +469,8 @@
                                         <li class="footer-social-container">
                                             <a class="footer-social-links"
                                                 href="">
-                                                <svg class="footer-social-icons">
+                                                <svg
+                                                    class="footer-social-icons">
                                                     <use
                                                         href="./sprite.svg#icon-instagram"></use>
                                                 </svg>
@@ -501,5 +510,14 @@
                                 </div>
                             </div>
                         </footer>
+                        <div class="modal is-hidden" data-modal><button
+                                type="button"
+                                class="modal-button" data-modal-close><svg
+                                    class="icon-krest" width="11" height="11">
+                                    <use
+                                        href="./sprite.svg#icon-Vector-1"></use>
+                                </svg></button>
+                        </div>
+                        <script src="./js/modal.js"></script>
                     </body>
                 </html>
